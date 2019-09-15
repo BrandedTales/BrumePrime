@@ -44,11 +44,11 @@ TagManager:
   - name: Background
     uniqueID: 874514713
     locked: 0
-  - name: Brume
-    uniqueID: 1137493479
-    locked: 0
   - name: Lands
     uniqueID: 2656796645
+    locked: 0
+  - name: Brume
+    uniqueID: 1137493479
     locked: 0
   - name: Tokens
     uniqueID: 2546514803
