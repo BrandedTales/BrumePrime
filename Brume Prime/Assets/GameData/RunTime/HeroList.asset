@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d47a43a6b1d8af543ad3e9f6c06b3b3f, type: 3}
-  m_Name: Brume Adjustment
+  m_Script: {fileID: 11500000, guid: 3b22d302af7e99b44828b286ab6c94fd, type: 3}
+  m_Name: HeroList
   m_EditorClassIdentifier: 
-  Description: "How much should the Brume grow \nwhen it grows."
-  value: 10
+  items: []

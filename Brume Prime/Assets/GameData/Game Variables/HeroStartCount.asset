@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d47a43a6b1d8af543ad3e9f6c06b3b3f, type: 3}
-  m_Name: Brume Adjustment
+  m_Name: HeroStartCount
   m_EditorClassIdentifier: 
-  Description: "How much should the Brume grow \nwhen it grows."
-  value: 10
+  Description: "The number of heroes you start the \ngame with."
+  value: 3

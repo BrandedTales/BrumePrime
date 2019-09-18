@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf5c209ce6faac4db5f116b0f0a6ab4, type: 3}
+  m_Name: NewGame
+  m_EditorClassIdentifier: 
+  hc:
+  - {fileID: 11400000, guid: e37e34918e59b614a83c2ac7a118e8f0, type: 2}
+  - {fileID: 11400000, guid: f5bb7aca6ac93ee46b7fe3256235ace1, type: 2}
+  - {fileID: 11400000, guid: 33b8c05974326284bb6858e5532ea290, type: 2}
+  - {fileID: 11400000, guid: 6373cdda2409fec4bbcf2749b8de91db, type: 2}
+  - {fileID: 11400000, guid: 9030452c1c335944e980aedfc5677bc8, type: 2}
+  startingTurn: 1
