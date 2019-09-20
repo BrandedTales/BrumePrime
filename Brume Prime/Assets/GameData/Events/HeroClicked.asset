@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b22d302af7e99b44828b286ab6c94fd, type: 3}
-  m_Name: HeroList
+  m_Script: {fileID: 11500000, guid: ba59b9101c85403448a16d9f438826b8, type: 3}
+  m_Name: HeroClicked
   m_EditorClassIdentifier: 
-  items: []

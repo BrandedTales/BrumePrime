@@ -14,7 +14,10 @@ namespace BT.Brume.Managers
         [SerializeField] FloatReference heroStartCount;
         [SerializeField] InitializeContent defaultContent;
         [SerializeField] HeroIndex availableHeroes;
+        [SerializeField] LandIndex availableLands;
         [SerializeField] FloatReference startingTurn;
+
+        [SerializeField] LandPiece testLand;
 
 
         // Start is called before the first frame update
@@ -22,19 +25,41 @@ namespace BT.Brume.Managers
         {
             InitializeContent();
             SetupNewHeroes();
+            ConfigureLands();  //Hacky to test.  Remove/alter this later!
         }
 
+        private void ConfigureLands()
+        {
+            testLand.land = new Land(availableLands.RandomLand());
+        }
+        #region Initialize Methods
         private void InitializeContent()
+        {
+            InitializeHeroes();
+            InitializeLands();
+
+            startingTurn.variable.SetValue(defaultContent.startingTurn);
+
+        }
+
+        private void InitializeLands()
+        {
+            availableLands.landList.Clear();
+            foreach (LandContent lc in defaultContent.lc)
+            {
+                availableLands.landList.Add(lc);
+            }
+        }
+
+        private void InitializeHeroes()
         {
             availableHeroes.heroList.Clear();
             foreach (HeroContent hc in defaultContent.hc)
             {
                 availableHeroes.heroList.Add(hc);
             }
-
-            startingTurn.variable.SetValue(defaultContent.startingTurn);
-
         }
+        #endregion
 
         private void SetupNewHeroes()
         {

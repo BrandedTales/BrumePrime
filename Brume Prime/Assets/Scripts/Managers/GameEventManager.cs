@@ -12,6 +12,9 @@ namespace BT.Brume.Managers
         [SerializeField] HeroIndex heroIndex;
         [SerializeField] HeroPiece heroPrefab;
         [SerializeField] GameObject heroStable;
+
+        [SerializeField] ActivePiece activePiece;
+        [SerializeField] GameObject landMenu;
         
         public void SpawnRandomHero()
         {
@@ -22,6 +25,17 @@ namespace BT.Brume.Managers
             
             HeroPiece newPiece = Instantiate(heroPrefab, heroStable.transform);
             newPiece.hero = newHero;
+        }
+
+        public void OpenLandMenu()
+        {
+            Debug.Log("Land menu!  " + activePiece.activeLand.land.landName);
+            var LandMenu = Instantiate(landMenu);
+        }
+
+        public void OpenHeroMenu()
+        {
+            Debug.Log("Hero menu!  " + activePiece.activeHero.hero.heroName);
         }
 
     }

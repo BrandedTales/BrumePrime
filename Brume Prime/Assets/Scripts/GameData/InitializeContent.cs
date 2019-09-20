@@ -9,6 +9,7 @@ namespace BT.Brume
     public class InitializeContent : ScriptableObject
     {
         public List<HeroContent> hc;
+        public List<LandContent> lc;
         public float startingTurn;
 
     }

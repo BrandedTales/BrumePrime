@@ -18,4 +18,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 33b8c05974326284bb6858e5532ea290, type: 2}
   - {fileID: 11400000, guid: 6373cdda2409fec4bbcf2749b8de91db, type: 2}
   - {fileID: 11400000, guid: 9030452c1c335944e980aedfc5677bc8, type: 2}
+  lc:
+  - {fileID: 11400000, guid: 805cf6d069445654a840e451b19029b1, type: 2}
   startingTurn: 1
