@@ -17,21 +17,14 @@ namespace BT.Brume.Managers
         [SerializeField] LandIndex availableLands;
         [SerializeField] FloatReference startingTurn;
 
-        [SerializeField] LandPiece testLand;
-
-
         // Start is called before the first frame update
         void Start()
         {
             InitializeContent();
             SetupNewHeroes();
-            ConfigureLands();  //Hacky to test.  Remove/alter this later!
         }
 
-        private void ConfigureLands()
-        {
-            testLand.land = new Land(availableLands.RandomLand());
-        }
+
         #region Initialize Methods
         private void InitializeContent()
         {

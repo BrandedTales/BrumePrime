@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 007aeab0057b0984baa5754190c521b7, type: 3}
-  m_Name: LandIndex
+  m_Script: {fileID: 11500000, guid: d47a43a6b1d8af543ad3e9f6c06b3b3f, type: 3}
+  m_Name: BrumeLevel
   m_EditorClassIdentifier: 
-  landList: []
+  Description: This is the degree the Brume has withdrawn.
+  value: 0

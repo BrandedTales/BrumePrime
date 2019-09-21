@@ -15,6 +15,7 @@ namespace BT.Brume.Managers
 
         [SerializeField] ActivePiece activePiece;
         [SerializeField] GameObject landMenu;
+        [SerializeField] GameObject heroMenu;
         
         public void SpawnRandomHero()
         {
@@ -36,6 +37,7 @@ namespace BT.Brume.Managers
         public void OpenHeroMenu()
         {
             Debug.Log("Hero menu!  " + activePiece.activeHero.hero.heroName);
+            var HeroMenu = Instantiate(heroMenu);
         }
 
     }

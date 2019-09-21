@@ -20,4 +20,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9030452c1c335944e980aedfc5677bc8, type: 2}
   lc:
   - {fileID: 11400000, guid: 805cf6d069445654a840e451b19029b1, type: 2}
+  - {fileID: 11400000, guid: db82ebc9245e0f740a5b3e447203c451, type: 2}
+  - {fileID: 11400000, guid: fe6fef36a6793ff428b8e03a147909a5, type: 2}
+  - {fileID: 11400000, guid: 7e0e43543ab923546bc747addadec564, type: 2}
+  - {fileID: 11400000, guid: 97db8d4d5d1cff04395ae6cfab66869d, type: 2}
   startingTurn: 1

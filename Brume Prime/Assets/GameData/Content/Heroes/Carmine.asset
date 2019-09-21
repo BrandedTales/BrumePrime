@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: Carmine
   m_EditorClassIdentifier: 
   heroName: Carmine
-  flavor: 
+  flavor: 'If the shimmering sigils upon her robes weren''t enough to identify Carmine
+    as an arcanist, than the top of her staff, which burns with an eternal fire, surely
+    would. Unlike others who found themselves here; swept away through the brume,
+    Carmin came through an act of grand arcana. Her goal to seek vengeance on the
+    one that butchered her brother. Within moments of arriving the deed was done and
+    the target of her hatred but cinders at her feet. Now, trapped like everyone else,
+    she bends her will and magics to the task of returning home; no matter the cost. '
   cardImage: {fileID: 21300000, guid: 2006b529b5978094990b470176b1cb8d, type: 3}
-  fullImage: {fileID: 0}
+  fullImage: {fileID: 21300000, guid: 6cecc7d3bf2469040bbab59183205322, type: 3}
   tokenImage: {fileID: 0}

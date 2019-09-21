@@ -10,6 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 007aeab0057b0984baa5754190c521b7, type: 3}
-  m_Name: LandIndex
+  m_Name: HomelandIndex
   m_EditorClassIdentifier: 
-  landList: []
+  landList:
+  - {fileID: 11400000, guid: 1ba6da22f8ceef149b3b2644c245d987, type: 2}

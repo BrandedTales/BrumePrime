@@ -11,6 +11,8 @@ namespace BT.Brume
         public string landName;
         public string flavor;
 
+        public bool isHomeland;
+
         public Sprite cardImage;
         public Sprite fullImage;
         public Sprite tokenImage;
@@ -23,6 +25,8 @@ namespace BT.Brume
             flavor = lc.flavor;
             cardImage = lc.cardImage;
             fullImage = lc.fullImage;
+
+            isHomeland = lc.isHomeland;
         }
 
     }

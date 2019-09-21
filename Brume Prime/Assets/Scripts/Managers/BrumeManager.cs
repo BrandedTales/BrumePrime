@@ -13,10 +13,13 @@ namespace BT.Brume.Managers
         [SerializeField] FloatReference turnNumber;
         [SerializeField] GameEvent brumeWithdraw;
 
+        public FloatReference brumeLevel;
+
         public void CheckWithdrawBrume()
         {
             if (turnNumber % brumeInterval == 0)
             {
+                brumeLevel.variable.value++;
                 brumeWithdraw.Raise();
             }
         }

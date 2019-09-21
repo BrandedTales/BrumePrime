@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: Velvet
   m_EditorClassIdentifier: 
   heroName: Lady Velvet
-  flavor: 
+  flavor: 'At any true gathering of tittering lady''s and foppish gentleman can be
+    found the Lady Velvet. Her beauty along with shining blue eyes of mirth and mischief
+    draw out scandalous secrets and the wildest of rumours from all those around her.  An
+    adventurous, some say dangerous, streak runs through the Lady and she often picks
+    at the webs of intrigue woven by the powerful or, along with her retinue, explores
+    places others fear to tread. Such activities often cost others their lives in
+    her service, but have also made the Lady and those around her obscenely rich. '
   cardImage: {fileID: 21300000, guid: a5567cd8cc4c9854e90260be5d7180ae, type: 3}
-  fullImage: {fileID: 0}
+  fullImage: {fileID: 21300000, guid: 92bd077b75968b149966cd3ee318f7de, type: 3}
   tokenImage: {fileID: 0}

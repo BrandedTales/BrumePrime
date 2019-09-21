@@ -14,5 +14,7 @@ namespace BT.Brume
 
         public Sprite cardImage;
         public Sprite fullImage;
+
+        public bool isHomeland;
     }
 }

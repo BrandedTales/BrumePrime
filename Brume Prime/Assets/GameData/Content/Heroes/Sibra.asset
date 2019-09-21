@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: Sibra
   m_EditorClassIdentifier: 
   heroName: Sibra
-  flavor: 
+  flavor: 'None here remember her arrival, and many believe that she dwelt here before
+    the brume shrouded the land. Revered by the people here for her powers to heal
+    the sick and and banish the monsters that dwell here; Sibra cuts an unusual figure
+    in this land of dim hope. An aged and matronly figure clothed in simple robes
+    and adorned with numerous godly symbols that seem to glow with an inner light.
+    Where she travels she brings hope and the compelling words of divine beings far
+    removed from this sinister place. '
   cardImage: {fileID: 21300000, guid: 7dcf1975bd1ef1746be11f2d5c2fe325, type: 3}
-  fullImage: {fileID: 0}
+  fullImage: {fileID: 21300000, guid: d37e840a2aa916646a3de811b2957bd0, type: 3}
   tokenImage: {fileID: 0}
