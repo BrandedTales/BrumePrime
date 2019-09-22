@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: DevilsFingers
   m_EditorClassIdentifier: 
   landName: Devil's Fingers
-  flavor: 
+  flavor: In the center of a vast, windswept, plane sits five irregular stone columns
+    of enormous size, each reaching hundreds of feet towards the sky. Intricate circular
+    patterns, whose artists have long been lost to memory, adorn every inch of the
+    rising stone. It is local rumor that these pillars have subtly moved since their
+    discovery but, upon investigation, this is likely more rumor than fact.
   cardImage: {fileID: 21300000, guid: 0db3a19473c12044eaf1311ff2167dbe, type: 3}
-  fullImage: {fileID: 0}
+  fullImage: {fileID: 21300000, guid: fb8c2c66449df54499ef2df0b8b48051, type: 3}
+  isHomeland: 0

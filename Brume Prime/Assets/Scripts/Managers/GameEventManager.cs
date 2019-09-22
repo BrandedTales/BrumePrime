@@ -8,26 +8,10 @@ namespace BT.Brume.Managers
 {
     public class GameEventManager : MonoBehaviour
     {
-
-        [SerializeField] HeroIndex heroIndex;
-        [SerializeField] HeroPiece heroPrefab;
-        [SerializeField] GameObject heroStable;
-
         [SerializeField] ActivePiece activePiece;
         [SerializeField] GameObject landMenu;
         [SerializeField] GameObject heroMenu;
         
-        public void SpawnRandomHero()
-        {
-            HeroContent newHeroContent = heroIndex.RandomHero();
-            Hero newHero = new Hero(newHeroContent);
-
-            Debug.Log("spawning a hero: " + newHero.heroName);
-            
-            HeroPiece newPiece = Instantiate(heroPrefab, heroStable.transform);
-            newPiece.hero = newHero;
-        }
-
         public void OpenLandMenu()
         {
             Debug.Log("Land menu!  " + activePiece.activeLand.land.landName);

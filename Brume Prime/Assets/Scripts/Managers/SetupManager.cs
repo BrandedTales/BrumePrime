@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using BT.Brume;
 using BT.Variables;
+using BT.Events;
 using System;
 
 namespace BT.Brume.Managers
@@ -10,28 +11,53 @@ namespace BT.Brume.Managers
     public class SetupManager : MonoBehaviour
     {
 
-        GameEventManager gameEventManager;
         [SerializeField] FloatReference heroStartCount;
+        [SerializeField] GameEvent spawnHero;
+        [SerializeField] GameEvent generateLand;
         [SerializeField] InitializeContent defaultContent;
         [SerializeField] HeroIndex availableHeroes;
         [SerializeField] LandIndex availableLands;
         [SerializeField] FloatReference startingTurn;
+        [SerializeField] FloatReference heroSpawnCounter;
+        [SerializeField] LandCounterArray landSpawnCounter;
+        [SerializeField] FloatReference brumeUnlocked;
+        [SerializeField] FloatReference activeBrumeLevel;
+        [SerializeField] FloatReference brumeCounter;
+        [SerializeField] FloatReference initialLandCount;
+
 
         // Start is called before the first frame update
         void Start()
         {
             InitializeContent();
             SetupNewHeroes();
+            SetupInitialLand();
         }
 
 
         #region Initialize Methods
         private void InitializeContent()
         {
+            startingTurn.variable.SetValue(defaultContent.startingTurn);
+            activeBrumeLevel.variable.SetValue(0);
+
             InitializeHeroes();
             InitializeLands();
+            InitializeRuntimeSpawnRates();
+        }
 
-            startingTurn.variable.SetValue(defaultContent.startingTurn);
+        private void InitializeRuntimeSpawnRates()
+        {
+            heroSpawnCounter.variable.SetValue(0);
+
+            for (int i=0;i<landSpawnCounter.landIncrementCounter.Length;i++)
+            {
+                landSpawnCounter.landIncrementCounter[i] = 0;
+                landSpawnCounter.landCount[i] = 0;
+            }
+
+            brumeUnlocked.variable.SetValue(0);
+            brumeCounter.variable.SetValue(0);
 
         }
 
@@ -55,24 +81,21 @@ namespace BT.Brume.Managers
         #endregion
 
         private void SetupNewHeroes()
-        {
-            gameEventManager = GetComponent<GameEventManager>();
+        { 
 
             for (int i = 0; i < heroStartCount; i++)
             {
-                float j = heroStartCount;
-                Debug.Log("Loop:" + i + "/" + j);
-                gameEventManager.SpawnRandomHero();
+                spawnHero.Raise();
             }
         }
 
-        // Update is called once per frame
-        void Update()
+        private void SetupInitialLand()
         {
+            for (int i=0; i< initialLandCount; i++)
+            {
 
+                generateLand.Raise();
+            }
         }
-
-
-
     }
 }

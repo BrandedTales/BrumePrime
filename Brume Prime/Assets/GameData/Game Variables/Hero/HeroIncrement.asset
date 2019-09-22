@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d47a43a6b1d8af543ad3e9f6c06b3b3f, type: 3}
-  m_Name: HeroStartCount
+  m_Name: HeroIncrement
   m_EditorClassIdentifier: 
-  Description: "The number of heroes you start the \ngame with."
-  value: 3
+  Description: "This is the amount a hero spawn chance \nincrements per turn."
+  value: 0.25

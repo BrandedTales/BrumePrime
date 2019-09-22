@@ -13,6 +13,13 @@ MonoBehaviour:
   m_Name: ForbiddenCaverns
   m_EditorClassIdentifier: 
   landName: Forbidden Caverns
-  flavor: 
+  flavor: Deep within an age worn mountain range rests the ancient remains of a monastery
+    once dedicated to the God of Light. According to decaying sacred scrolls within,
+    the purpose of this once holy place was to safeguard the entrance to the caves
+    that run beneath the mountains.  What remains of the scraps of books that can
+    be recovered describes caverns of impossible angles and rooms of steel guarded
+    by creatures from nightmare. Tireless searches yield no signs of the caves described;
+    merely mounds of rubble.
   cardImage: {fileID: 21300000, guid: 09b277cd73e447142997103ed3672077, type: 3}
-  fullImage: {fileID: 0}
+  fullImage: {fileID: 21300000, guid: 9d5c12d5a4f63b847bc5e7033f9a7d70, type: 3}
+  isHomeland: 0

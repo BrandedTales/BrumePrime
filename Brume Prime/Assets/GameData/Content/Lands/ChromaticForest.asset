@@ -13,6 +13,13 @@ MonoBehaviour:
   m_Name: ChromaticForest
   m_EditorClassIdentifier: 
   landName: Chromatic Forest
-  flavor: 
+  flavor: Gaining its namesake from the thousands upon thousands of butterflies that
+    dance atop the canopy of its towering ancient trees. The myriad of colors against
+    the lush green of the trees produces a dazzling display that heartens and transfixes
+    all who see it. Those who venture in can also partake of the massive sweet fruits
+    that hang low and heavy from the nearly every branch. The fruit is of great assistance
+    to travelers as they make their way through the forest, as no game animals, or
+    animals of any sort, have ever been seen within its boundaries.
   cardImage: {fileID: 21300000, guid: 86398f19af583424c904e13c5846a475, type: 3}
-  fullImage: {fileID: 0}
+  fullImage: {fileID: 21300000, guid: 1ad8fe9fdf0bb72419e439ed417ef54f, type: 3}
+  isHomeland: 0

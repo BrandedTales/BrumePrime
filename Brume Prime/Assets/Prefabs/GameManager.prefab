@@ -1,5 +1,256 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &95945345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 95945346}
+  - component: {fileID: 95945347}
+  - component: {fileID: 95945349}
+  - component: {fileID: 95945348}
+  m_Layer: 0
+  m_Name: LandManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &95945346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95945345}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5206701104492966461}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &95945347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95945345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db49e6232d19e8a4b9cefd19bce8bd92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  landIndex: {fileID: 11400000, guid: 3b74d138c73b7374fbf122b07942de07, type: 2}
+  landPrefab: {fileID: 1315504839, guid: 476ed10c2d95be943a24959d54e8e1da, type: 3}
+  generateLand: {fileID: 11400000, guid: 22e535dba49208945a4e11f2788175b9, type: 2}
+  landConfig: {fileID: 11400000, guid: 9d767f6ee3ab5744f891e4f21bdd3525, type: 2}
+  activeBrumeLevel:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 97d9ba08d8695df499436c195a9190a5, type: 2}
+  currentBrumeMax:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 1897253ca024b4349a6a41ecc1d31306, type: 2}
+  brumeCounter:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 26a26dc0927ec404db3dc5ec552be76a, type: 2}
+  landCounterArray: {fileID: 11400000, guid: 7a258fef4a075644196b2fbb399d7818, type: 2}
+--- !u!114 &95945349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95945345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147283bcd0f529c43814341c31e35146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 41fa16cd32cb0b84f9c11cac57ed5cb4, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 95945347}
+        m_MethodName: IncrementLandCounters
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 95945347}
+        m_MethodName: IncrementBrume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &95945348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95945345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147283bcd0f529c43814341c31e35146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 22e535dba49208945a4e11f2788175b9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 95945347}
+        m_MethodName: GenerateLand
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!1 &1956044934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1956044935}
+  - component: {fileID: 1956044937}
+  - component: {fileID: 1956044936}
+  - component: {fileID: 1956044938}
+  m_Layer: 0
+  m_Name: HeroManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1956044935
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956044934}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5206701104492966461}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1956044937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956044934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f6627387303881409b8378095d12064, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHeroCount:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 8857cd872ffab794491fc3caa8ac36eb, type: 2}
+  heroSpawnIncrement:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 038ffaf2eb17476418f36be2376c5f70, type: 2}
+  heroSpawnCounter:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 2ac99570f8b812a4980e643078672d9f, type: 2}
+  spawnHero: {fileID: 11400000, guid: 6a5832b4d42981141a27b9a03c760e39, type: 2}
+  heroIndex: {fileID: 11400000, guid: f2e8e690e628c8b45b2957aa34076b22, type: 2}
+  heroPrefab: {fileID: 1821662532929398049, guid: 7e044d95584cd7b4f970e916bd6115c2,
+    type: 3}
+  heroStable: {fileID: 0}
+--- !u!114 &1956044936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956044934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147283bcd0f529c43814341c31e35146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 41fa16cd32cb0b84f9c11cac57ed5cb4, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1956044937}
+        m_MethodName: HeroSpawnIncrement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1956044938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956044934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147283bcd0f529c43814341c31e35146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 6a5832b4d42981141a27b9a03c760e39, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1956044937}
+        m_MethodName: SpawnHero
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &5206701104492966460
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,6 +262,10 @@ GameObject:
   - component: {fileID: 5206701104492966461}
   - component: {fileID: 6414308466707827755}
   - component: {fileID: 3964679492811873509}
+  - component: {fileID: 1079078709}
+  - component: {fileID: 1079078710}
+  - component: {fileID: 1079078711}
+  - component: {fileID: 1079078712}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -28,7 +283,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1956044935}
+  - {fileID: 95945346}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45,9 +302,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnCounter:
-    useConstant: 1
+    useConstant: 0
     constantValue: 0
-    variable: {fileID: 0}
+    variable: {fileID: 11400000, guid: c569e18d7a87b364b8aa6dc6d5cc6e0a, type: 2}
 --- !u!114 &3964679492811873509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,6 +323,127 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6414308466707827755}
         m_MethodName: IncrementTurn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1079078709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5206701104492966460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88bed783a3d48414a826f44ed2428190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heroStartCount:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 8857cd872ffab794491fc3caa8ac36eb, type: 2}
+  spawnHero: {fileID: 11400000, guid: 6a5832b4d42981141a27b9a03c760e39, type: 2}
+  generateLand: {fileID: 11400000, guid: 22e535dba49208945a4e11f2788175b9, type: 2}
+  defaultContent: {fileID: 11400000, guid: b53ac7318888c0843a24f1a12c3deba8, type: 2}
+  availableHeroes: {fileID: 11400000, guid: f2e8e690e628c8b45b2957aa34076b22, type: 2}
+  availableLands: {fileID: 11400000, guid: 3b74d138c73b7374fbf122b07942de07, type: 2}
+  startingTurn:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: c569e18d7a87b364b8aa6dc6d5cc6e0a, type: 2}
+  heroSpawnCounter:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 2ac99570f8b812a4980e643078672d9f, type: 2}
+  landSpawnCounter: {fileID: 11400000, guid: 7a258fef4a075644196b2fbb399d7818, type: 2}
+  brumeUnlocked:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 1897253ca024b4349a6a41ecc1d31306, type: 2}
+  activeBrumeLevel:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 97d9ba08d8695df499436c195a9190a5, type: 2}
+  brumeCounter:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 26a26dc0927ec404db3dc5ec552be76a, type: 2}
+  initialLandCount:
+    useConstant: 0
+    constantValue: 0
+    variable: {fileID: 11400000, guid: 47f60ddac6ebaa84aa80821b36f1db8a, type: 2}
+--- !u!114 &1079078710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5206701104492966460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ef311091cb168a4ba22e3615a167d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activePiece: {fileID: 11400000, guid: 70b7aae31b534c74eb1f23e71c49db32, type: 2}
+  landMenu: {fileID: 4161264537955401866, guid: a2b664fca4b31414faea23d82f84f8d7,
+    type: 3}
+  heroMenu: {fileID: 4161264537955401866, guid: 890fead42c1d2d941a1b2425524da90a,
+    type: 3}
+--- !u!114 &1079078711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5206701104492966460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147283bcd0f529c43814341c31e35146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: bb8f28a38f495d446aa0094dbb5477ed, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1079078710}
+        m_MethodName: OpenHeroMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1079078712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5206701104492966460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147283bcd0f529c43814341c31e35146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: c704f9e7187cc6f49bfdab74d73b4ee2, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1079078710}
+        m_MethodName: OpenLandMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

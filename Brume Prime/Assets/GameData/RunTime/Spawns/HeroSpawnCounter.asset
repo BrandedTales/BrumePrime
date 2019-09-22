@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d47a43a6b1d8af543ad3e9f6c06b3b3f, type: 3}
-  m_Name: BrumeLevel
+  m_Name: HeroSpawnCounter
   m_EditorClassIdentifier: 
-  Description: This is the degree the Brume has withdrawn.
+  Description: 'This is an increasing value that will spawn
+
+    a hero when it gets to 1.'
   value: 0
