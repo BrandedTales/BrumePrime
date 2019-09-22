@@ -157,7 +157,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heroRTS: {fileID: 11400000, guid: 3b1bbc7f221787a429ac6545ce8e0e57, type: 2}
   activePiece: {fileID: 11400000, guid: 70b7aae31b534c74eb1f23e71c49db32, type: 2}
-  heroClicked: {fileID: 11400000, guid: bb8f28a38f495d446aa0094dbb5477ed, type: 2}
+  heroClickedEvent: {fileID: 11400000, guid: bb8f28a38f495d446aa0094dbb5477ed, type: 2}
+  heroAssignedEvent: {fileID: 11400000, guid: 032bab70cbf1a394990ddfe25ea5e806, type: 2}
 --- !u!114 &1821662532929398050
 MonoBehaviour:
   m_ObjectHideFlags: 0

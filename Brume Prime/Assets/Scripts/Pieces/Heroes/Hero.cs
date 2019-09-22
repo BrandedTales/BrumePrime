@@ -15,6 +15,9 @@ namespace BT.Brume
         public Sprite fullImage;
         public Sprite tokenImage;
 
+        public bool inHand;
+        public Land location;
+
         public Hero (HeroContent hc)
         {
             heroName = hc.heroName;

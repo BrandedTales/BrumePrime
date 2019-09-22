@@ -22,4 +22,4 @@ MonoBehaviour:
     her service, but have also made the Lady and those around her obscenely rich. '
   cardImage: {fileID: 21300000, guid: a5567cd8cc4c9854e90260be5d7180ae, type: 3}
   fullImage: {fileID: 21300000, guid: 92bd077b75968b149966cd3ee318f7de, type: 3}
-  tokenImage: {fileID: 0}
+  tokenImage: {fileID: 21300000, guid: 734e1c88d1797824e88ce23e9a0cc216, type: 3}

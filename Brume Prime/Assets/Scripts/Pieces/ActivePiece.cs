@@ -11,13 +11,15 @@ namespace BT.Brume
         public enum PieceType
         {
             Land,
-            Hero
+            Hero,
+            Token
         }
 
 
         public PieceType pieceType;
         public LandPiece activeLand;
         public HeroPiece activeHero;
+        public HeroToken activeToken;
         
 
     }

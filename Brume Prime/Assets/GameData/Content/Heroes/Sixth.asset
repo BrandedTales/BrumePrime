@@ -21,4 +21,4 @@ MonoBehaviour:
     lives, the people of this place have a champion.
   cardImage: {fileID: 21300000, guid: 03ed62d686b471147a8f6f2d5324946f, type: 3}
   fullImage: {fileID: 21300000, guid: 4b80e47cc86dbb148893564738f01fd0, type: 3}
-  tokenImage: {fileID: 0}
+  tokenImage: {fileID: 21300000, guid: 21858a6c6ff941746875609a254b2345, type: 3}

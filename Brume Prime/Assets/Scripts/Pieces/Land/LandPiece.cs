@@ -16,6 +16,9 @@ namespace BT.Brume
         public ActivePiece activePiece;
         [SerializeField] GameEvent landClicked;
 
+        [SerializeField] GameObject tokenPanel;
+        [SerializeField] HeroToken tokenPrefab;
+
         public void Awake()
         {
             landRTS.Add(this);
@@ -33,6 +36,12 @@ namespace BT.Brume
             activePiece.pieceType = ActivePiece.PieceType.Land;
             activePiece.activeLand = this;
             landClicked.Raise();
+        }
+
+        public void AddToken()
+        {
+            HeroToken newToken = Instantiate(tokenPrefab, tokenPanel.transform);
+            newToken.hero = activePiece.activeToken.hero;
         }
     }
 }
