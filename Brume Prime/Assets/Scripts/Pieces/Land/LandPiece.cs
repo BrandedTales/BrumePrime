@@ -40,8 +40,12 @@ namespace BT.Brume
 
         public void AddToken()
         {
-            HeroToken newToken = Instantiate(tokenPrefab, tokenPanel.transform);
-            newToken.hero = activePiece.activeToken.hero;
+            if (activePiece.activeLand == this)
+            {
+                HeroToken newToken = Instantiate(tokenPrefab, tokenPanel.transform);
+                newToken.hero = activePiece.activeHero.hero;
+                newToken.name = activePiece.activeHero.hero.heroName;
+            }
         }
     }
 }

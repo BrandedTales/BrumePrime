@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.29, y: -120.83}
+  m_AnchoredPosition: {x: 3.2899933, y: 27}
   m_SizeDelta: {x: -43.84, y: -273.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &639556992321642916
@@ -93,7 +93,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 4
   m_Spacing: 0.05
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
@@ -117,6 +117,7 @@ GameObject:
   - component: {fileID: 7467432539406888571}
   - component: {fileID: 1315504839}
   - component: {fileID: 1315504844}
+  - component: {fileID: 1112711801018778819}
   m_Layer: 5
   m_Name: LandCard
   m_TagString: Untagged
@@ -258,6 +259,9 @@ MonoBehaviour:
   landRTS: {fileID: 11400000, guid: 7444af0618d49054c8813a8d476eb5b6, type: 2}
   activePiece: {fileID: 11400000, guid: 70b7aae31b534c74eb1f23e71c49db32, type: 2}
   landClicked: {fileID: 11400000, guid: c704f9e7187cc6f49bfdab74d73b4ee2, type: 2}
+  tokenPanel: {fileID: 2289762589087455221}
+  tokenPrefab: {fileID: 4663555216165082196, guid: 3bec81f536c7e584d96b7beaca121f06,
+    type: 3}
 --- !u!114 &1315504844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +274,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 559655a31ddc1dd44b02f632db691f4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1112711801018778819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7467432539406888566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147283bcd0f529c43814341c31e35146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 032bab70cbf1a394990ddfe25ea5e806, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1315504839}
+        m_MethodName: AddToken
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &7467432539681460200
 GameObject:
   m_ObjectHideFlags: 0

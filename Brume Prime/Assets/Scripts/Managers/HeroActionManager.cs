@@ -15,10 +15,9 @@ namespace BT.Brume.Managers
         public ActivePiece activePiece;
 
 
-        public void HeroAssignedToLand()
+        public void RemoveHero()
         {
-            hero = activePiece.activeHero.hero;
-            hero.location = activePiece.activeLand.land;
+
 
         }
 

@@ -8,7 +8,6 @@ using System;
 
 namespace BT.Brume
 {
-    [RequireComponent(typeof(LandPiece))]
     public class LandDisplay : MonoBehaviour
     {
         LandPiece piece;

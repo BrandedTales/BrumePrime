@@ -18,6 +18,8 @@ namespace BT.Brume.Managers
         [SerializeField] HeroPiece heroPrefab;
         [SerializeField] GameObject heroStable;
 
+        [SerializeField] ActivePiece activePiece;
+
         public void HeroSpawnIncrement()
         {
             if (heroIndex.heroList.Count > 0)
@@ -39,6 +41,12 @@ namespace BT.Brume.Managers
 
                 HeroPiece newPiece = Instantiate(heroPrefab, heroStable.transform);
                 newPiece.hero = newHero;
+        }
+
+        public void CreateHeroCard()
+        {
+            HeroPiece newPiece = Instantiate(heroPrefab, heroStable.transform);
+            newPiece.hero = activePiece.activeToken.hero;
         }
     }
 }

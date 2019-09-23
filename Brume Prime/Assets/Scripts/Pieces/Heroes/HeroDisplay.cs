@@ -8,25 +8,41 @@ using System;
 
 namespace BT.Brume
 {
-    [RequireComponent(typeof(HeroPiece))]
+
     public class HeroDisplay : MonoBehaviour
     {
         HeroPiece piece;
+        HeroToken token;
+
+        Hero hero;
+        Sprite heroSprite;
         
 
         // Start is called before the first frame update
         private void Start()
         {
-            piece = GetComponent<HeroPiece>();
+            if (GetComponent<HeroPiece>() != null)
+            {
+                piece = GetComponent<HeroPiece>();
+                hero = piece.hero;
+                heroSprite = hero.cardImage;
+            }
+            if (GetComponent<HeroToken>() != null)
+            {
+                token = GetComponent<HeroToken>();
+                hero = token.hero;
+                heroSprite = hero.tokenImage;
+            }
         }
 
         private void Update()
         {
-            if (piece.hero != null)
+            if (hero != null)
             {
-                gameObject.name = piece.hero.heroName;
-                GetComponent<Image>().sprite = piece.hero.cardImage;
-                GetComponentInChildren<Text>().text = piece.hero.heroName;
+                gameObject.name = hero.heroName;
+                GetComponent<Image>().sprite = heroSprite;
+                if (GetComponentInChildren<Text>() != null)
+                        GetComponentInChildren<Text>().text = hero.heroName;
             }
         }
 

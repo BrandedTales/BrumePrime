@@ -33,6 +33,13 @@ namespace BT.Brume
                 menuName.text = activePiece.activeHero.hero.heroName;
                 flavor.text = activePiece.activeHero.hero.flavor;
             }
+            else if (activePiece.pieceType == ActivePiece.PieceType.Token)
+            {
+                fullSprite.sprite = activePiece.activeToken.hero.fullImage;
+                menuName.text = activePiece.activeToken.hero.heroName;
+                flavor.text = activePiece.activeToken.hero.flavor;
+            }
+
         }
 
         // Update is called once per frame

@@ -49,7 +49,7 @@ namespace BT.Brume
                     activePiece.pieceType = ActivePiece.PieceType.Hero;
                     activePiece.activeHero = this;
                     activePiece.activeLand = r.gameObject.GetComponent<LandPiece>();
-                    Debug.Log(r.gameObject.name);
+                    Debug.Log(activePiece.activeHero.name + " " + activePiece.activeLand.name);
                     heroAssignedEvent.Raise();
                 }
             }
@@ -64,9 +64,9 @@ namespace BT.Brume
             heroClickedEvent.Raise();
         }
 
-        private void DestroyCard()
+        public void DestroyCard()
         {
-            if (activePiece.activeHero == this)
+            if ((activePiece.activeHero == this) && (activePiece.pieceType == ActivePiece.PieceType.Hero))
                 Destroy(this.gameObject);
         }
 
